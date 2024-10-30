@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+          body {
+            background: url(download.jpeg.crdownload) no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color:black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        p:hover{
+            cursor: pointer;
+            color: lightblue;
+        }
+        .footer {
+            margin-top: 290px;
+            font-size: 0.9em;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-info">
+        <div style="display: flex;">
+            <img width="48" height="48" src="https://img.icons8.com/color/48/apple-phone.png" alt="apple-phone"/>
+            <p>+254759698241 / +254783313296</p>
+        </div>
+        <div class="contact-item">
+            <img width="48" height="48" src="https://img.icons8.com/fluency/48/twitter.png" alt="twitter"/>
+            <p id="X">@19.ceazsar</p>
+        </div>
+        <div style="display: flex;">
+            <img width="48" height="48" src="https://img.icons8.com/color/48/instagram-new--v1.png" alt="instagram-new--v1"/>
+            <p id="insta">19.caesar</p>
+        </div>
+        <div style="display: flex;">
+            <img width="48" height="48" src="https://img.icons8.com/color/48/whatsapp--v1.png">
+        <p> +254759698241 </p>
+        </div>
+    </div>
+    <footer>
+        <p class="footer">© 2024 caesar</p>
+    </footer>
+    <script>
+       var p = document.getElementById('insta');
+       p.addEventListener(
+        'click',
+        function(){
+            window.open('https://www.instagram.com/19.caesar?igsh=dXVrcjB5bWMxam5l','_blank');
+        }
+       );
+       var p = document.getElementById('X');
+       p.addEventListener(
+        'click',
+        function(){
+            window.open('https://x.com/19ceasar?t=sktCmi2a8Z_DZebDggNCcA&s=09','_blank');
+        }
+       );
+    </script>
+</body>
+</html>
