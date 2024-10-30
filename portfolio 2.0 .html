@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAESAR DEVops</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a separate CSS file -->
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="navi">
+        <ol>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news" id="News">News</a></li>
+            <li><a href="#contact" id="contact">Contact</a></li>
+            <li class="last"><a href="" id="ABOUT">About</a></li>
+        </ol>
+    </div>
+
+    <header class="hero">
+        <h1>CAESAR DEVops</h1>
+        <p>Passionate about my work, pixel by pixel.</p>
+    </header>
+    <section id="about" class="about">
+        <img width="94" height="94" src="dp.crdownload" alt=""/>
+          <p>“Hi there,my name is Vick a creative graphic video designer and editor. My journey in visual storytelling began with a spark of curiosity and a love for all things visual. From motion graphics to cinematic editing, I thrive on turning ideas into captivating visuals that leave a lasting impact. Welcome to my world of pixels and frames!”</p>
+         <div style="border:20px;"> <p >I’m also well-versed in web development. With a palette of languages and tools at my disposal, I craft digital experiences that blend aesthetics and functionality seamlessly. Here’s what I bring to the table:</p></div>
+          <div class="skills">
+              <span>HTML & CSS</span>
+              <span>typescript</span>
+              <span>JavaScript</span>
+              <span>Python</span>
+              <span>Bootstrap</span>
+              <!-- Add more skills here -->
+          </div>
+      </section>
+<div>
+    <h2 style="text-align: center; margin-bottom: 15px;">Featured Videos</h2>
+</div>
+      
+      <section id="videos" class="videos">
+        
+        <div class="video-container">
+            <video controls>
+                <source src="HOUNTER.Ke.mp4" type="video/mp4">
+            </video>
+            <p>
+                <h1>HOUNTER.KE AD campaign.</h1>
+                Hounter ke is an online house hunting platform meant to make the search for your next haven simple.
+            </p>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="URBAN BITES [AD].mov" type="video/mp4">
+            </video>
+            <p>
+                <h1>URBAN BITES CONCEPT-AD campaign.</h1>
+                Urban bites bringing you a crisp perfection with all new flavors.
+            </p>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="WE ARE PAKPRO.mp4" type="video/mp4">
+            </video>
+            <p>
+                <h1>WE ARE PAKPRO CONCEPT-AD campaign.</h1>
+                PAKPRO your partner in handling and regulating post-consumer product packaging.
+            </p>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="ECO-TIP .mp4" type="video/mp4">
+            </video>
+            <p>
+                <h1>ECO-TIP AD campaign.</h1>
+                Here is a useful tip on recycling and consumer packaging disposal.
+            </p>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="THE 3RULEZ.mp4" type="video/mp4">
+            </video>
+            <p>
+                <h1>THE 3 RULES AD campaign.</h1>
+                The three rules for recycling and ensuring a green future.
+            </p>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="project.mp4" type="video/mp4">
+            </video>
+            <p>
+                <h1>CAMP-DAVID AD campaign.</h1>
+                Your cozy space in Juja.
+            </p>
+        </div>
+
+<div>
+    <h1 style="text-align: center; text-decoration: underline; margin-bottom: 20px; margin-left:590px;">DOWNLOAD CV</h1>
+    <img  style="margin: 8px; margin-left: 650px;" width="48" height="48" src="https://img.icons8.com/?size=100&id=WRCtDKbMGnSH&format=png&color=000000" alt="linkedin"/>
+    <p id="download" class="DL" style="margin-left: 610px"> click the to dowload</p>
+</div>
+
+    </section>
+    
+   
+        <!-- Contact Section -->
+     <section id="contact form" class="contact">
+         <h2 style="margin-bottom:10px;">Contact Me</h2>
+         <form>
+             <input id="name" type="text" placeholder="Your Name">
+             <input id="email" type="email" placeholder="Your Email">
+             <textarea id="message" placeholder="Your Message"></textarea>
+             <button type="submit" id="submit">Send</button>
+         </form>
+
+         <div class="lincs">
+            <div class="contact-item">
+                <img width="24" height="24" src="https://img.icons8.com/material-sharp/24/github.png" alt="github"/>
+                <p id="git" class="icons">github</p>
+            </div>
+            <div class="contact-item" style="display: flex;">
+                <img style="margin: 8px;" width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/>
+                <p id="linked" class="icons">linkedin</p>
+            </div>
+       
+
+    <!-- Contact Section -->
+    <!-- ... (existing code) ... -->
+
+    <!-- Footer Section -->
+    <footer>
+        <p class="footer">© 2024 caesar</p>
+    </footer>
+    <script>
+        
+        var contact = document.getElementById('contact');
+        contact.addEventListener('click',
+        function(){
+            window.open('contacts.html','_blank');
+        });
+
+        var about = document.getElementById('ABOUT');
+        about.addEventListener('click',
+        function(){
+            window.open('About.html','_blank');
+        });
+
+        var nes = document.getElementById('News');
+        nes.addEventListener('click',
+        function(){
+            window.open('https://www.reuters.com/technology/','_blank');
+        });
+        var Git = document.getElementById('git');
+        Git.addEventListener('click',
+        function(){
+            window.open('https://github.com/Mutethiar','_blank');
+  
+        });
+        var Linked = document.getElementById('linked');
+        Linked.addEventListener('click',
+        function(){
+            window.open('https://www.linkedin.com/in/victor-mutethia-a5a144290/','_blank');
+        });
+        document.getElementById('submit').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Send form data to the server or an email service
+    fetch('/send-email', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+    }).then(response => response.json())
+    .then(data => {
+        alert('Message sent successfully!');
+    }).catch(error => {
+        alert('Error sending message.');
+        console.error('Error:', error);
+    });
+});
+emailjs.init("service_ynzk9ph");
+
+document.getElementById('submit').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ynzk9ph', 'template_kkaf2m7', this)
+        .then(function () {
+            alert('Message sent successfully!');
+        }, function (error) {
+            alert('Error sending message.');
+            console.error('Failed...', error);
+        });
+});
+
+document.getElementById('download').addEventListener('click', function() { const link = document.createElement('download');
+ link.href = 'C:/Portfolio/El.chapo.srt';
+link.download = 'El.chapo.srt'; 
+ document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link); });
+    </script>
+</body>
+</html>
