@@ -1,285 +1,326 @@
-
 /* styles.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc; /* Light Beige */
+    color: #333333; /* Dark gray text for contrast */
+    margin: 0;
+    padding: 0;
+}
 
 /* Reset default styles */
 ol {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: #333;
-position: -webkit-sticky; /* Safari */
-position: sticky;
-top: 0;
-opacity:50% ;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    opacity: 50%;
 }
 
 li {
-float: left;
+    float: left;
 }
 
 li a {
-display: block;
-color: white;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 li a:hover {
-background-color: #111;
+    background-color: #111;
 }
 
 .active {
-background-color:red;
-opacity: 100%;
-}
-.last{
-float: right;
-}
-.navi{
-margin: 7px;
-padding: auto;
-}
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    background-color: red;
+    opacity: 100%;
 }
 
-/* Global styles */
-body {
-font-family: Arial, sans-serif;
-background-color: #f9f9f9;
-color: white;
+.last {
+    float: right;
+}
+
+.navi {
+    margin: 7px;
+    padding: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Header section */
-.hero {
-background-image: url('hero-background.jpg');
-background-size: cover;
-text-align: center;
-color: #f5f0f0;
+header {
+    background-color: #e2725b; /* Terracotta Red */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #468c8b; /* Muted Teal border */
 }
 
-.hero h1 {
-font-size: 3rem;
-margin-bottom: 0px;
-color: black;
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
 }
 
-.hero p {
-font-size: 1.2rem;
-opacity: 0.8;
-color:black;
-margin-bottom: 10px;
-}
-
-nav {
-margin-top: 30px;
-color: black;
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
 
 nav a {
-color: white;
-text-decoration: none;
-margin: 0 20px;
-font-size: 1.1rem;
-transition: color 0.3s;
+    text-decoration: none;
+    color: #ffffff; /* White text */
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
+nav a:hover {
+    color: #468c8b; /* Muted Teal on hover */
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e2725b; /* Terracotta Red */
+    color: #ffffff; /* White text */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #468c8b; /* Muted Teal */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #356f6e; /* Darker Muted Teal on hover */
+}
 
 /* About section */
 .about {
-margin: 0px;
-text-align: center;
-font-size:25px ;
+    margin: 0px;
+    text-align: center;
+    font-size: 25px;
 }
 
 .about img {
-border-radius: 50%;
-width: 200px; 
-height: 350px;
-margin-bottom: 20px;
-margin-top: 0px;
-padding: 80px 0;
-box-shadow: white;
+    border-radius: 50%;
+    width: 200px;
+    height: 350px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    padding: 80px 0;
+    box-shadow: white;
 }
 
 .skills {
-margin-top: 20px;
+    margin-top: 20px;
 }
 
 .skills span {
-display: inline-block;
-margin: 0 10px;
-font-size: 1rem;
-color:white;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1rem;
+    color: black;
 }
 
 /* Projects section */
 .projects {
-padding: 80px 0;
-
+    padding: 80px 0;
 }
 
 .project-card {
-background-color: #fff;
-border-radius: 10px;
-padding: 20px;
-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-margin-bottom: 20px;
-
+    background-color:black; /* matte gray */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
 .project-card h3 {
-font-size: 1.2rem;
-margin-bottom: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 .project-card p {
-font-size: 1rem;
-color:rgb(7, 0, 0);
+    font-size: 1rem;
+    color: rgb(7, 0, 0);
 }
 
 .project-card ul {
-list-style: none;
-margin-top: 10px;
+    list-style: none;
+    margin-top: 10px;
 }
 
 .project-card a {
-display: inline-block;
-margin-right: 10px;
-color: white;
-text-decoration: none;
-font-size: 0.9rem;
-transition: color 0.3s;
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
 }
 
 .project-card a:hover {
-color: #ffcc00;
+    color: red;
 }
 
 /* Contact section */
 .contact {
-padding: 80px 0;
-text-align: center;
-margin-bottom: 7px;
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f5f5dc; /* Light Beige */
+    color: #333333; /* Dark gray text */
+    
 }
 
 .contact form {
-max-width: 400px;
-margin: 0 auto;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .contact input,
 .contact textarea {
-width: 100%;
-padding: 10px;
-margin-bottom: 20px;
-border: 1px solid #ddd;
-border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .contact button {
-background-color:skyblue;
-color: #fff;
-border: none;
-padding: 10px 20px;
-border-radius: 5px;
-cursor: pointer;
-transition: background-color 0.3s;
+    background-color: #468c8b; /* Muted Teal */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .contact button:hover {
-background-color:beige;
+    background-color: #356f6e; /* Darker Muted Teal on hover */
 }
 
 .social-icons {
-margin-top: 30px;
+    margin-top: 30px;
 }
 
 .social-icons a {
-margin-right: 20px;
-font-size: 1.5rem;
-color: white;
-transition: color 0.3s;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s;
 }
 
 .social-icons a:hover {
-color: #ffcc00;
+    color: #ffcc00;
 }
+
 .contact-info {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
+
 .contact-item {
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-.icons:hover{
-cursor: pointer;
-color: lightblue;
-}
-.proj{
-margin: 0;
-display: flex;
-justify-content: center;
-}
-.repos{
-justify-content: center;
-display: flex;
-border: solid #777;
-margin: 10px; 
-width: 300px;
 
+.icons:hover {
+    cursor: pointer;
+    color: rgb(28, 193, 223);
 }
-.repos:hover{
-margin: 10px;
-border: solid paleturquoise;
-cursor: pointer;
-color: red;
-}
-.lincs{
-margin: 15px;
-color: #111;
-}
-body{
-background: url(download.jpeg.crdownload);
-background-size: cover;
-background-repeat: no-repeat;
-}
-/* styles.css */
 
-/* Video section container */
+.proj {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.repos {
+    justify-content: center;
+    display: flex;
+    border: solid #777;
+    margin: 10px;
+    width: 300px;
+}
+
+.repos:hover {
+    margin: 10px;
+    border: solid paleturquoise;
+    cursor: pointer;
+    color: red;
+}
+
+/* Featured Videos Section */
 .videos {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 20px;
+    background-color: #f5f5dc; /* Light Beige */
 }
 
 .video-container {
     flex: 1 1 30%;
     box-sizing: border-box;
     margin-bottom: 25px;
-    padding: 10px;
+    padding: 15px;
     max-width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    }
+    background-color: #468c8b; /* Muted Teal */
+    color: #ffffff; /* White text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    background-color: #e2725b; /* Terracotta Red on hover */
+}
 
 .video-container video {
     width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 .video-container p {
     text-align: center;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -296,21 +337,75 @@ background-repeat: no-repeat;
     }
 }
 
-.footer{
-    margin-top: 150px;
-    float: left;
-}
-h2{
+/* Footer section */
+.footer {
+    background-color: #e2725b; /* Terracotta Red */
+    color: #ffffff; /* White text */
+    padding: 20px;
     text-align: center;
-    text-decoration: underline;
-    margin-top: 17px;
+    margin-top: 35px; /* Increased top margin by 15px */
 }
-.DL{
-    color: lightslategray;
+
+.social-icons {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
 }
-.DL:hover{
+
+.social-icons a {
+    margin: 0 10px;
+    color: #ffffff; /* White text */
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #468c8b; /* Muted Teal on hover */
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.links a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #468c8b; /* Muted Teal on hover */
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ffffff; /* White text */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+p:hover {
     cursor: pointer;
-    color: rgb(235, 44, 10);
-    text-decoration: underline;
-    
+    color: rgb(13, 210, 245);
+}
+
+.lincs {
+    margin: 15px;
+    color: white;
 }
