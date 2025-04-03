@@ -1,4 +1,7 @@
-        // Navigation Links
+// JavaScript for Portfolio Website
+// Ensure the DOM is fully loaded before running the script
+document.addEventListener('DOMContentLoaded', function () {
+// Navigation Links
         document.getElementById('contact').addEventListener('click', () => window.open('contacts.html', '_blank'));
         document.getElementById('project').addEventListener('click', () => window.open('projectx.html', '_blank'));
         document.getElementById('ABOUT').addEventListener('click', () => window.open('About.html', '_blank'));
@@ -7,7 +10,7 @@
         document.getElementById('linked').addEventListener('click', () => window.open('https://www.linkedin.com/in/victor-mutethia-a5a144290/', '_blank'));
         document.getElementById('insta').addEventListener('click', () => window.open('https://www.instagram.com/19.caesar?igsh=dXVrcjB5bWMxam5l', '_blank'));
         document.getElementById('X').addEventListener('click', () => window.open('https://x.com/19ceasar?t=sktCmi2a8Z_DZebDggNCcA&s=09', '_blank'));
-        document.getElementById('WA').addEventListener('click', () => window.open('https://wa.me/+254759698241', '_blank'));
+        document.getElementById('WA').addEventListener('click', () => window.open('https://wa.me/+254759698241', '_blank'));}
 
         // Form Submission
         document.querySelector('form').addEventListener('submit', function (e) {
