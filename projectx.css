@@ -1,0 +1,90 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5dc; /* Light Beige */
+  color: #333333; /* Dark gray text for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #e2725b; /* Terracotta Red */
+  color: #ffffff; /* White text for contrast */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #468c8b; /* Muted Teal border */
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+.projects {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project {
+  border: 1px solid #888;
+  border-radius: 5px;
+  background-color: #78cfcf;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  padding: 20px; /* Adjusted size */
+  transform: scale(1); /* Normal scale */
+}
+
+.project:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px) scale(1); /* Maintain normal scale on hover */
+}
+
+.project-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.project-header h2 {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.project-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.toggle {
+  font-size: 18px;
+  color: #333;
+}
+
+.project-content {
+  padding: 10px;
+  display: none; /* Hidden by default */
+}
+
+.project-content.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  position: fixed; /* Ensure footer stays at the bottom */
+  bottom: 0;
+  width: 100%;
+  background-color: #e2725b; /* Match header color */
+  color: #ffffff;
+}
